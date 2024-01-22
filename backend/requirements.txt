@@ -11,7 +11,7 @@ azure-mgmt-rdbms==10.1.0
 azure-mgmt-resource==23.0.1
 azure-mgmt-subscription==3.1.1
 Babel==2.14.0
-backports.zoneinfo==0.1.0
+backports.zoneinfo;python_version<"3.9"
 bcrypt==4.0.1
 bidict==0.22.1
 blinker==1.6.2
