@@ -209,6 +209,7 @@ REST_AUTH = {
 
 # cors headers
 CORS_ALLOWED_ORIGINS = [
+    "https://vms-frontend-kr8a.vercel.app",
     "http://localhost:5174",
 ]
 CORS_ALLOW_CREDENTIALS = True
