@@ -199,10 +199,9 @@ REST_AUTH = {
     'PASSWORD_RESET_CONFIRM_SERIALIZER': 'dj_rest_auth.serializers.PasswordResetConfirmSerializer',
     'PASSWORD_CHANGE_SERIALIZER': 'dj_rest_auth.serializers.PasswordChangeSerializer',
 
-    'REGISTER_SERIALIZER': 'dj_rest_auth.registration.serializers.RegisterSerializer',
+    'REGISTER_SERIALIZER': 'accounts.serializers.CustomRegisterSerializer',
 
     'REGISTER_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
-    'USER_DETAILS_SERIALIZER': 'accounts.serializers.CustomUserModelSerializer'
 
 }
 
@@ -210,7 +209,7 @@ REST_AUTH = {
 # cors headers
 CORS_ALLOWED_ORIGINS = [
     "https://vms-frontend-kr8a.vercel.app",
-    "http://localhost:5174",
+    "http://localhost:5173",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
