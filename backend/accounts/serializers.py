@@ -4,7 +4,6 @@ from dj_rest_auth.registration.serializers import RegisterSerializer
 
 class CustomRegisterSerializer(RegisterSerializer):
     first_name = serializers.CharField()
-    role = serializers.CharField()
 
     def get_cleaned_data(self):
         super(CustomRegisterSerializer, self).get_cleaned_data()
