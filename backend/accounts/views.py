@@ -7,11 +7,11 @@ from dj_rest_auth.registration.views import SocialLoginView
 
 class GoogleLogin(SocialLoginView): # if you want to use Authorization Code Grant, use this
     adapter_class = GoogleOAuth2Adapter
-    callback_url = "https://vms-frontend-kr8a.vercel.app/"
+    callback_url = "http://localhost:5173/"
     client_class = OAuth2Client
 
 def email_confirmation(request, key):
-    return redirect(f"https://vms-frontend-kr8a.vercel.app/dj-rest-auth/registration/account-confirm-email/{key}")
+    return redirect(f"http://localhost:5173/registration/account-confirm-email/{key}")
 
 def reset_password_confirm(request, uid, token):
-    return redirect(f"https://vms-frontend-kr8a.vercel.app/reset/password/confirm/{uid}/{token}")
+    return redirect(f"http://localhost:5173/reset/password/confirm/{uid}/{token}")

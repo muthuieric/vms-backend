@@ -5,6 +5,8 @@ from django.utils import timezone
 # Create your models here.
 class Visit(models.Model):
     visitor = models.CharField(max_length=255)
+    id_number = models.CharField(max_length=20)
+    phone = models.CharField(max_length=20)
     host = models.CharField(max_length=255)
     visit_type = models.CharField(max_length=255)  
     purpose = models.CharField(max_length=255)
