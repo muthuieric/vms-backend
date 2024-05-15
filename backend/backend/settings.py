@@ -105,10 +105,20 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": 'postgres',
+        "USER": 'postgres',
+        "PASSWORD":'p123@sqd',
+        "HOST":'localhost',
+        "PORT": 5432
     }
 }
 # database_url = os.environ.get("DATABASE_URL")
@@ -207,6 +217,7 @@ REST_AUTH = {
 
 # cors headers
 CORS_ALLOWED_ORIGINS = [
+    "https://matteh.co.ke",
     "https://vms-frontend-kr8a.vercel.app",
     "http://localhost:5173",
 ]
