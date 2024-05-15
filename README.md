@@ -31,7 +31,7 @@ Before running the application, make sure you have the following installed:
 - Django REST Framework
 
 ## Installation
-1. Clone the repository to your local machine:`git clone https://github.comyour-username/vms-backend.git
+1. Clone the repository to your local machine:`git clone https://github.com/muthuieric/vms-backend`
 2. Navigate to the project directory:`cd backend`
 3. Install the required dependencies:`pip install -r requirements.txt`
 4. Apply migrations:`python manage.py migrate`
