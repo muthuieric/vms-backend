@@ -113,14 +113,16 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # }
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": 'postgres',
         "USER": 'postgres',
         "PASSWORD":'p123@sqd',
-        "HOST":'localhost',
+        "HOST":'vms-database.cdq2uik26qke.us-east-1.rds.amazonaws.com',
         "PORT": 5432
     }
 }
+
+
 # database_url = os.environ.get("DATABASE_URL")
 # DATABASES["default"] = dj_database_url.parse(database_url)
 
