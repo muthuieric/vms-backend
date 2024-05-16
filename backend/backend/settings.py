@@ -117,7 +117,7 @@ DATABASES = {
         "NAME": 'postgres',
         "USER": 'postgres',
         "PASSWORD":'p123@sqd',
-        "HOST":'vms-database.cdq2uik26qke.us-east-1.rds.amazonaws.com',
+        "HOST":'localhost',
         "PORT": 5432
     }
 }
