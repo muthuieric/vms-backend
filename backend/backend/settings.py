@@ -234,3 +234,6 @@ EMAIL_HOST_USER = 'testtest6222@gmail.com'
 EMAIL_HOST_PASSWORD = 'lxow cfko nyzw clgy'
 
 AUTH_USER_MODEL = "accounts.CustomUserModel"
+
+
+STATIC_ROOT = '/home/eric/Development/code/Django/vms-backend/backend'
